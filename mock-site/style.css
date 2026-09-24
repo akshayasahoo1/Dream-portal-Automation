@@ -1,0 +1,12 @@
+:root { --bg: #0f1024; --card: #1c1e3f; --accent: #a78bfa; --text: #eef; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: system-ui, sans-serif; background: linear-gradient(160deg, #0f1024, #2b1a4f); color: var(--text); display: flex; align-items: center; justify-content: center; }
+.panel { background: var(--card); border-radius: 16px; padding: 32px 40px; box-shadow: 0 10px 40px #0008; text-align: center; min-width: 360px; }
+h1 { margin: 8px 0; } p { opacity: .8; }
+button { background: var(--accent); border: 0; color: #121212; font-size: 1.05rem; font-weight: 700; padding: 12px 28px; border-radius: 999px; cursor: pointer; }
+.badges { display: flex; gap: 12px; justify-content: center; margin: 18px 0; }
+.badge { background: #ffffff18; border-radius: 999px; padding: 6px 14px; }
+table { border-collapse: collapse; width: 100%; } th, td { padding: 10px 14px; border-bottom: 1px solid #ffffff22; text-align: left; }
+.stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.stat { background: #ffffff10; border-radius: 12px; padding: 16px; } .stat .num { font-size: 2rem; font-weight: 800; color: var(--accent); }
+@keyframes spin { to { transform: rotate(360deg); } } .spark { display: inline-block; font-size: 2.4rem; animation: spin 2s linear infinite; }

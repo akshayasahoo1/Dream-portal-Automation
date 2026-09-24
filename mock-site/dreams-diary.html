@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dreams Diary</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div class="panel" style="min-width:560px">
+    <h1>Dreams Diary</h1>
+    <table id="dreams-table">
+      <thead><tr><th>Dream Name</th><th>Days Ago</th><th>Dream Type</th></tr></thead>
+      <tbody id="dream-rows"></tbody>
+    </table>
+  </div>
+  <script src="dreams-data.js"></script>
+  <script>
+    document.getElementById('dream-rows').innerHTML = window.DREAMS.map(function (d) {
+      return '<tr><td>' + d.name + '</td><td>' + d.daysAgo + '</td><td>' + d.type + '</td></tr>';
+    }).join('');
+  </script>
+</body>
+</html>

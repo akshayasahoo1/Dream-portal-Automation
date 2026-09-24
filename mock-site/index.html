@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dream Portal</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div id="loader" class="panel">
+    <h1>Welcome to the Dreams Section</h1>
+    <p>Loading your dream portal...</p>
+    <div class="spark">✨</div>
+  </div>
+
+  <main id="content" class="panel" style="display:none">
+    <h1>Dream Portal</h1>
+    <p>Explore your dream journey</p>
+    <div class="badges"><span class="badge">10 Dreams</span><span class="badge">7 Days</span></div>
+    <button id="my-dreams">My Dreams</button>
+  </main>
+
+  <script>
+    // Loader for ~3 seconds, then reveal the content
+    setTimeout(function () {
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }, 3000);
+    document.getElementById('my-dreams').addEventListener('click', function () {
+      window.open('dreams-diary.html', '_blank');
+      window.open('dreams-total.html', '_blank');
+    });
+  </script>
+</body>
+</html>
