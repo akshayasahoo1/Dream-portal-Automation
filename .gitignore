@@ -1,0 +1,11 @@
+node_modules/
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+logs/
+debug/
+.env
+*.log
+.DS_Store
+# NOTE: screenshots/ is intentionally NOT ignored so run evidence can be committed.
